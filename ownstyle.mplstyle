@@ -363,7 +363,7 @@ axes.titlesize:     large   # fontsize of the axes title
                              # text.color as default value
 #axes.titley:        None    # position title (axes relative units).  None implies auto
 axes.titlepad:      5     # pad between axes and title in points
-axes.labelsize:     large  # fontsize of the x any y labels
+axes.labelsize:     x-large  # fontsize of the x any y labels
 axes.labelpad:      10     # space between label and axis
 #axes.labelweight:   normal  # weight of the x and y labels
 axes.labelcolor:    black
