@@ -1,5 +1,102 @@
 #### MATPLOTLIBRC FORMAT
 
+######################## SAVE ###########################################
+savefig.dpi:       1500     # figure dots per inch or 'figure'
+savefig.bbox:      tight    # {tight, standard}
+                                # 'tight' is incompatible with pipe-based animation
+                                # backends (e.g. 'ffmpeg') but will work with those
+                                # based on temporary files (e.g. 'ffmpeg_file')
+savefig.transparent: True     # setting that controls whether figures are saved with a
+                                # transparent background by default
+
+########################  GRIDS #########################################
+grid.color:     000  # grid color
+grid.linewidth: 0.8     # in points
+grid.alpha:     1.0     # transparency, between 0.0 and 1.0
+
+######################## FIGURE #########################################
+figure.figsize:     8, 6     # figure size in inches
+figure.dpi:         90   # figure dots per inch
+figure.frameon:     False      # enable figure frame
+
+######################## LEGEND #########################################
+legend.frameon:       False    # if True, draw the legend on a background patch
+legend.numpoints:     1        # the number of marker points in the legend line
+legend.markerscale:   1.5      # the relative size of legend markers vs. original
+legend.fontsize:      x-small
+
+######################### AXES ##########################################
+axes.labelcolor:    black
+axes.formatter.min_exponent: 3  # minimum exponent to format in scientific notation
+
+######################### TICKS #########################################
+xtick.top:           True     # draw ticks on the top side
+xtick.bottom:        True     # draw ticks on the bottom side
+xtick.labelbottom:   True     # draw label on the bottom
+xtick.major.size:    7       # major tick size in points
+xtick.minor.size:    4        # minor tick size in points
+xtick.major.width:   1.3        # major tick width in points
+xtick.minor.width:   0.8        # minor tick width in points
+xtick.color:         black   # color of the tick labels
+xtick.labelsize:     small  # fontsize of the tick labels
+xtick.direction:     in    # direction: {in, out, inout}
+xtick.minor.visible: True     # visibility of minor ticks on x-axis
+xtick.major.top:     True    # draw x axis top major ticks
+xtick.major.bottom:  True    # draw x axis bottom major ticks
+xtick.minor.top:     True    # draw x axis top minor ticks
+xtick.minor.bottom:  True    # draw x axis bottom minor ticks
+ytick.left:          True    # draw ticks on the left side
+ytick.right:         True   # draw ticks on the right side
+ytick.labelleft:     True    # draw tick labels on the left side
+ytick.labelright:    False   # draw tick labels on the right side
+ytick.major.size:    7     # major tick size in points
+ytick.minor.size:    4       # minor tick size in points
+ytick.major.width:   1.3     # major tick width in points
+ytick.minor.width:   0.8   # minor tick width in points
+ytick.color:         black   # color of the tick labels
+ytick.labelsize:     small  # fontsize of the tick labels
+ytick.direction:     in     # direction: {in, out, inout}
+ytick.minor.visible: True   # visibility of minor ticks on y-axis
+ytick.major.left:    True    # draw y axis left major ticks
+ytick.major.right:   True    # draw y axis right major ticks
+ytick.minor.left:    True    # draw y axis left minor ticks
+ytick.minor.right:   True    # draw y axis right minor ticks
+#ytick.alignment:     center_baseline  # alignment of yticks
+
+######################### LINES #########################################
+lines.marker:          o       # the default marker
+lines.markersize:      4          # marker size, in points
+
+######################### FONT ##########################################
+font.family:   Arial 
+font.size:    14
+
+######################### AXES ##########################################
+axes.formatter.limits: -10 , 10  # use scientific notation if log10
+                               # of the axis range is smaller than the
+                               # first or larger than the second
+axes.formatter.use_mathtext: True  # When True, use mathtext for scientific
+                                     # notation.
+axes.spines.left:   True  # display axis spines
+axes.spines.bottom: True
+axes.spines.top:    True
+axes.spines.right:  True
+axes.autolimit_mode: data  # How to scale axes limits to the data.  By using:
+                            #     - "data" to use data limits, plus some margin
+                            #     - "round_numbers" move to the nearest "round" number
+axes.xmargin:   0  # x margin.  See `axes.Axes.margins`
+axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
+axes.titlesize:     large   # fontsize of the axes title
+axes.linewidth:     1.5     # edge linewidth
+axes.grid.axis:     both    # which axis the grid should apply to
+axes.titlepad:      5     # pad between axes and title in points
+axes.labelsize:     large  # fontsize of the x any y labels
+axes.labelpad:      10     # space between label and axis
+
+*********************************************************************************************************************************************************************************
+*                                          END OF MY OWN CHANGES                                                                                                                *
+*********************************************************************************************************************************************************************************
+
 ## NOTE FOR END USERS: DO NOT EDIT THIS FILE!
 ##
 ## This is a sample matplotlib configuration file - you can find a copy
@@ -111,11 +208,11 @@
 #lines.linewidth: 2.5               # line width in points
 #lines.linestyle: -                 # solid line
 #lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
-lines.marker:          o       # the default marker
+
 #lines.markerfacecolor: auto        # the default marker face color
 #lines.markeredgecolor: auto        # the default marker edge color
 #lines.markeredgewidth: 1.0         # the line width around the marker symbol
-lines.markersize:      4          # marker size, in points
+
 #lines.dash_joinstyle:  round       # {miter, round, bevel}
 #lines.dash_capstyle:   butt        # {butt, round, projecting}
 #lines.solid_joinstyle: round       # {miter, round, bevel}
@@ -246,12 +343,12 @@ lines.markersize:      4          # marker size, in points
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 
-font.family:   Arial 
+
 #font.style:   normal
 #font.variant: normal
 #font.weight:  normal
 #font.stretch: normal
-font.size:    14
+
 
 #font.serif:      DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
 #font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
@@ -352,36 +449,34 @@ font.size:    14
 ## https://matplotlib.org/api/axes_api.html#module-matplotlib.axes
 #axes.facecolor:     white   # axes background color
 #axes.edgecolor:     black   # axes edge color
-axes.linewidth:     1.5     # edge linewidth
+
 #axes.grid:          False   # display grid or not
-axes.grid.axis:     both    # which axis the grid should apply to
+
 #axes.grid.which:    major   # gridlines at {major, minor, both} ticks
 #axes.titlelocation: center  # alignment of the title: {left, right, center}
-axes.titlesize:     large   # fontsize of the axes title
+
+
+
+
 #axes.titleweight:   normal  # font weight of title
 #axes.titlecolor:    auto    # color of the axes title, auto falls back to
                              # text.color as default value
 #axes.titley:        None    # position title (axes relative units).  None implies auto
-axes.titlepad:      5     # pad between axes and title in points
-axes.labelsize:     x-large  # fontsize of the x any y labels
-axes.labelpad:      10     # space between label and axis
+
 #axes.labelweight:   normal  # weight of the x and y labels
-axes.labelcolor:    black
+
 #axes.axisbelow:     line    # draw axis gridlines and ticks:
                              #     - below patches (True)
                              #     - above patches but below lines ('line')
                              #     - above all (False)
 
-axes.formatter.limits: -10 , 10  # use scientific notation if log10
-                               # of the axis range is smaller than the
-                               # first or larger than the second
+
 #axes.formatter.use_locale: False  # When True, format tick labels
                                    # according to the user's locale.
                                    # For example, use ',' as a decimal
                                    # separator in the fr_FR locale.
-axes.formatter.use_mathtext: True  # When True, use mathtext for scientific
-                                     # notation.
-axes.formatter.min_exponent: 3  # minimum exponent to format in scientific notation
+
+
 #axes.formatter.useoffset: True  # If True, the tick label formatter
                                  # will default to labeling ticks relative
                                  # to an offset when the data range is
@@ -392,10 +487,7 @@ axes.formatter.min_exponent: 3  # minimum exponent to format in scientific notat
                                      # at least this number of significant
                                      # digits from tick labels.
 
-axes.spines.left:   True  # display axis spines
-axes.spines.bottom: True
-axes.spines.top:    True
-axes.spines.right:  True
+
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
@@ -407,11 +499,7 @@ axes.spines.right:  True
                   # e.g. '1f77b4', instead of 1f77b4.
                   # See also https://matplotlib.org/tutorials/intermediate/color_cycle.html
                   # for more details on prop_cycle usage.
-axes.autolimit_mode: data  # How to scale axes limits to the data.  By using:
-                            #     - "data" to use data limits, plus some margin
-                            #     - "round_numbers" move to the nearest "round" number
-axes.xmargin:   0  # x margin.  See `axes.Axes.margins`
-axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
+
 #polaraxes.grid: True  # display grid on polar axes
 #axes3d.grid:    True  # display grid on 3d axes
 
@@ -451,71 +539,42 @@ axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
 ## * TICKS                                                                   *
 ## ***************************************************************************
 ## See https://matplotlib.org/api/axis_api.html#matplotlib.axis.Tick
-xtick.top:           True     # draw ticks on the top side
-xtick.bottom:        True     # draw ticks on the bottom side
+
 #xtick.labeltop:      False   # draw label on the top
-xtick.labelbottom:   True     # draw label on the bottom
-xtick.major.size:    7       # major tick size in points
-xtick.minor.size:    4        # minor tick size in points
-xtick.major.width:   1.3        # major tick width in points
-xtick.minor.width:   0.8        # minor tick width in points
+
 #xtick.major.pad:     3.5     # distance to major tick label in points
 #xtick.minor.pad:     3.4     # distance to the minor tick label in points
-xtick.color:         black   # color of the tick labels
-xtick.labelsize:     small  # fontsize of the tick labels
-xtick.direction:     in    # direction: {in, out, inout}
-xtick.minor.visible: True     # visibility of minor ticks on x-axis
-xtick.major.top:     True    # draw x axis top major ticks
-xtick.major.bottom:  True    # draw x axis bottom major ticks
-xtick.minor.top:     True    # draw x axis top minor ticks
-xtick.minor.bottom:  True    # draw x axis bottom minor ticks
+
 #xtick.alignment:     center  # alignment of xticks
 
-ytick.left:          True    # draw ticks on the left side
-ytick.right:         True   # draw ticks on the right side
-ytick.labelleft:     True    # draw tick labels on the left side
-ytick.labelright:    False   # draw tick labels on the right side
-ytick.major.size:    7     # major tick size in points
-ytick.minor.size:    4       # minor tick size in points
-ytick.major.width:   1.3     # major tick width in points
-ytick.minor.width:   0.8   # minor tick width in points
+
 #ytick.major.pad:     3.5     # distance to major tick label in points
 #ytick.minor.pad:     3.4     # distance to the minor tick label in points
-ytick.color:         black   # color of the tick labels
-ytick.labelsize:     small  # fontsize of the tick labels
-ytick.direction:     in     # direction: {in, out, inout}
-ytick.minor.visible: True   # visibility of minor ticks on y-axis
-ytick.major.left:    True    # draw y axis left major ticks
-ytick.major.right:   True    # draw y axis right major ticks
-ytick.minor.left:    True    # draw y axis left minor ticks
-ytick.minor.right:   True    # draw y axis right minor ticks
-#ytick.alignment:     center_baseline  # alignment of yticks
+
 
 
 ## ***************************************************************************
 ## * GRIDS                                                                   *
 ## ***************************************************************************
-grid.color:     000  # grid color
+
 #grid.linestyle: -       # solid
-grid.linewidth: 0.8     # in points
-grid.alpha:     1.0     # transparency, between 0.0 and 1.0
+
 
 
 ## ***************************************************************************
 ## * LEGEND                                                                  *
 ## ***************************************************************************
 #legend.loc:           best
-legend.frameon:       False    # if True, draw the legend on a background patch
+
 #legend.framealpha:    0.8      # legend patch transparency
 #legend.facecolor:     inherit  # inherit from axes.facecolor; or color spec
 #legend.edgecolor:     0.8      # background patch boundary color
 #legend.fancybox:      True     # if True, use a rounded box for the
                                 # legend background, else a rectangle
 #legend.shadow:        False    # if True, give background a shadow effect
-legend.numpoints:     1        # the number of marker points in the legend line
+
 #legend.scatterpoints: 1        # number of scatter points
-legend.markerscale:   1.5      # the relative size of legend markers vs. original
-legend.fontsize:      x-small
+
 #legend.title_fontsize: None    # None sets to the same as the default axes.
 
 ## Dimensions as fraction of fontsize:
@@ -534,11 +593,10 @@ legend.fontsize:      x-small
 ## See https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 #figure.titlesize:   small     # size of the figure title (``Figure.suptitle()``)
 #figure.titleweight: normal    # weight of the figure title
-figure.figsize:     8, 6     # figure size in inches
-figure.dpi:         90   # figure dots per inch
+
 #figure.facecolor:   white     # figure facecolor
 #figure.edgecolor:   white     # figure edgecolor
-figure.frameon:     False      # enable figure frame
+
 #figure.max_open_warning: 20   # The maximum number of figures to open through
                                # the pyplot interface before emitting a warning.
                                # If less than one this feature is disabled.
@@ -654,19 +712,15 @@ figure.frameon:     False      # enable figure frame
 ## The default savefig params can be different from the display params
 ## e.g., you may want a higher resolution, or to make the figure
 ## background white
-savefig.dpi:       1500     # figure dots per inch or 'figure'
+
 #savefig.facecolor: auto        # figure facecolor when saving
 #savefig.edgecolor: auto        # figure edgecolor when saving
 #savefig.format:    png         # {png, ps, pdf, svg}
-savefig.bbox:      tight    # {tight, standard}
-                                # 'tight' is incompatible with pipe-based animation
-                                # backends (e.g. 'ffmpeg') but will work with those
-                                # based on temporary files (e.g. 'ffmpeg_file')
+
 #savefig.pad_inches:   0.1      # Padding to be used when bbox is set to 'tight'
 #savefig.directory:    ~        # default directory in savefig dialog box,
                                 # leave empty to always use current working directory
-savefig.transparent: True     # setting that controls whether figures are saved with a
-                                # transparent background by default
+
 #savefig.orientation: portrait  # Orientation of saved figure
 
 ### tk backend params
