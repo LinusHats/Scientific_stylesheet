@@ -39,7 +39,7 @@ xtick.major.width:   1.3        # major tick width in points
 xtick.minor.width:   0.8        # minor tick width in points
 xtick.color:         black   # color of the tick labels
 xtick.labelsize:     small  # fontsize of the tick labels
-xtick.direction:     in    # direction: {in, out, inout}
+xtick.direction:     out    # direction: {in, out, inout}
 xtick.minor.visible: True     # visibility of minor ticks on x-axis
 xtick.major.top:     True    # draw x axis top major ticks
 xtick.major.bottom:  True    # draw x axis bottom major ticks
