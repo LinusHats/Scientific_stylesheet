@@ -11,8 +11,8 @@ savefig.transparent: True     # setting that controls whether figures are saved 
 
 ########################  GRIDS #########################################
 grid.color:     000  # grid color
-grid.linewidth: 0.8     # in points
-grid.alpha:     1.0     # transparency, between 0.0 and 1.0
+grid.linewidth: 0.5     # in points
+grid.alpha:     0.8     # transparency, between 0.0 and 1.0
 
 ######################## FIGURE #########################################
 figure.figsize:     8, 6     # figure size in inches
