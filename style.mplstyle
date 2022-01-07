@@ -42,7 +42,7 @@ axes.spines.right:  True
 axes.autolimit_mode: data       # How to scale axes limits to the data.  By using:
                                 #     - "data" to use data limits, plus some margin
                                 #     - "round_numbers" move to the nearest "round" number
-axes.xmargin:       0           # x margin.  See `axes.Axes.margins`
+axes.xmargin:       .05           # x margin.  See `axes.Axes.margins`
 axes.ymargin:       .05         # y margin.  See `axes.Axes.margins`
 axes.titlesize:     large       # fontsize of the axes title
 axes.linewidth:     1.5         # edge linewidth
