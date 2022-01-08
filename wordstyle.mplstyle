@@ -90,5 +90,5 @@ lines.marker:          o        # the default marker
 lines.markersize:      4        # marker size, in points
 
 ######################### FONT ##########################################
-font.family:    sansserif           # font family of the texts
+#font.family:    sansserif           # font family of the texts
 font.size:      14              # size of the texts
