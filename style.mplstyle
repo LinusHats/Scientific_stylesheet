@@ -23,7 +23,7 @@ figure.facecolor:   white       # background color of the plot
 ######################## LEGEND #########################################
 legend.frameon:       False     # if True, draw the legend on a background patch
 legend.numpoints:     1         # the number of marker points in the legend line
-legend.markerscale:   1.5       # the relative size of legend markers vs. original
+legend.markerscale:   1         # the relative size of legend markers vs. original
 legend.fontsize:      small
 
 ######################### AXES ##########################################
@@ -87,7 +87,8 @@ ytick.minor.right:   True       # draw y axis right minor ticks
 
 ######################### LINES #########################################
 lines.marker:          o        # the default marker
-lines.markersize:      10       # marker size, in points
+lines.markersize:      12       # marker size, in points
+lines.width:           2        # linewidth
 
 ######################### FONT ##########################################
 font.family:    serif           # font family of the texts
