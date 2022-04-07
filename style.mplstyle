@@ -87,7 +87,7 @@ ytick.minor.right:   True       # draw y axis right minor ticks
 
 ######################### LINES #########################################
 lines.marker:          o        # the default marker
-lines.markersize:      12       # marker size, in points
+lines.markersize:      16       # marker size, in points
 lines.width:           2        # linewidth
 
 ######################### FONT ##########################################
