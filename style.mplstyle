@@ -50,6 +50,7 @@ axes.grid.axis:     both        # which axis the grid should apply to
 axes.titlepad:      5           # pad between axes and title in points
 axes.labelsize:     medium       # fontsize of the x any y labels
 axes.labelpad:      10          # space between label and axis
+axes.color_cycle    : 5DA5DA, FAA43A, 60BD68, F17CB0, B2912F, B276B2, DECF3F, F15854, 4D4D4D
 
 ######################### TICKS #########################################
 xtick.top:           True       # draw ticks on the top side
