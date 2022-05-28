@@ -52,7 +52,7 @@ axes.labelsize:     medium       # fontsize of the x any y labels
 axes.labelpad:      10          # space between label and axis
 
 
-# Set color cycle: blue, green, yellow, red, violet, gray
+## Set color cycle: blue, green, yellow, red, violet, gray
 axes.prop_cycle : (cycler('marker', ['o', 's', '^', 'v', '<', '>', 'd']) + cycler('color', ['FFBB78', '2CA02C', '98DF8A', 'D62728', 'FF9896', '9467BD', 'C5B0D5']) + cycler('ls', ['-', '--', ':', '-.', '-', '--', '-.']))
 
 ######################### TICKS #########################################
