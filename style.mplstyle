@@ -53,7 +53,7 @@ axes.labelpad:      10          # space between label and axis
 
 
 # Set color cycle: blue, green, yellow, red, violet, gray
-axes.prop_cycle : (cycler('color', ['FFBB78', '2CA02C', '98DF8A', 'D62728', 'FF9896', '9467BD', 'C5B0D5']) + cycler('ls', ['-', '--', ':', '-.', '-', '--', '-.']))
+axes.prop_cycle : (cycler('marker', ['o', 's', '^', 'v', '<', '>', 'd']) + cycler('color', ['FFBB78', '2CA02C', '98DF8A', 'D62728', 'FF9896', '9467BD', 'C5B0D5']) + cycler('ls', ['-', '--', ':', '-.', '-', '--', '-.']))
 
 ######################### TICKS #########################################
 xtick.top:           True       # draw ticks on the top side
@@ -90,7 +90,7 @@ ytick.minor.right:   True       # draw y axis right minor ticks
 #ytick.alignment:    center_baseline  # alignment of yticks
 
 ######################### LINES #########################################
-lines.marker:          cycler('marker', ['o', 's', '^', 'v', '<', '>', 'd'])         # the default marker
+lines.marker:          'o'        # the default marker
 lines.markersize:      6       # marker size, in points
 lines.linewidth:       2.5        # linewidth
 
