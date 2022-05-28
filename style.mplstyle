@@ -53,7 +53,7 @@ axes.labelpad:      10          # space between label and axis
 # axes.prop_cycle    #: axes.prop_cycle    #: cycler('color', ['E24A33', 'AEC7E8', 'FF07FE', 'FFBB78', '2CA02C', '98DF8A', 'D62728', 'FF9896', '9467BD', 'C5B0D5', '8C564B', 'C49C94', 'E377C2', 'F7B6D2', '7F7F7F', 'C7C7C7', 'BCBD22', 'DBDB8D', '17BECF', '9EDAE5'])#cycler('color', ['5DA5DA', 'FAA43A', '60BD68', 'F17CB0', 'B2912F', 'B276B2', 'DECF3F', 'F15854', '4D4D4D'])
 
 # Set color cycle: blue, green, yellow, red, violet, gray
-axes.prop_cycle : (cycler('color', ['blue', 'green', 'yellow', 'red', 'violet', 'gray'] + cycler('ls', ['-', '--', ':', '-.']))
+axes.prop_cycle : (cycler('color', ['blue', 'green', 'yellow', 'red', 'violet', 'gray']) + cycler('ls', ['-', '--', ':', '-.']))
 
 ######################### TICKS #########################################
 xtick.top:           True       # draw ticks on the top side
