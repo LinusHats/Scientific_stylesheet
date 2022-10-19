@@ -6,7 +6,7 @@ savefig.bbox:      tight        # {tight, standard}
                                 # 'tight' is incompatible with pipe-based animation
                                 # backends (e.g. 'ffmpeg') but will work with those
                                 # based on temporary files (e.g. 'ffmpeg_file')
-savefig.transparent: True       # setting that controls whether figures are saved with a
+savefig.transparent: False       # setting that controls whether figures are saved with a
                                 # transparent background by default
 
 ########################  GRIDS #########################################
@@ -91,4 +91,4 @@ lines.markersize:      4        # marker size, in points
 
 ######################### FONT ##########################################
 #font.family:    sansserif           # font family of the texts
-font.size:      14              # size of the texts
+font.size:      12              # size of the texts
