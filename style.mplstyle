@@ -96,4 +96,4 @@ lines.linewidth:       2.5        # linewidth
 
 ######################### FONT ##########################################
 font.family:    serif           # font family of the texts
-font.size:      12              # size of the texts
+font.size:      11              # size of the texts
