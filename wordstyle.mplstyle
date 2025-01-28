@@ -1,12 +1,12 @@
 #### MATPLOTLIBRC FORMAT
 
 ######################## SAVE ###########################################
-savefig.dpi:       1500         # figure dots per inch or 'figure'
+savefig.dpi:       700         # figure dots per inch or 'figure'
 savefig.bbox:      tight        # {tight, standard}
                                 # 'tight' is incompatible with pipe-based animation
                                 # backends (e.g. 'ffmpeg') but will work with those
                                 # based on temporary files (e.g. 'ffmpeg_file')
-savefig.transparent: False       # setting that controls whether figures are saved with a
+savefig.transparent: True       # setting that controls whether figures are saved with a
                                 # transparent background by default
 
 ########################  GRIDS #########################################
@@ -48,7 +48,7 @@ axes.titlesize:     large       # fontsize of the axes title
 axes.linewidth:     1.5         # edge linewidth
 axes.grid.axis:     both        # which axis the grid should apply to
 axes.titlepad:      5           # pad between axes and title in points
-axes.labelsize:     large       # fontsize of the x any y labels
+axes.labelsize:     medium       # fontsize of the x any y labels
 axes.labelpad:      10          # space between label and axis
 
 ######################### TICKS #########################################
