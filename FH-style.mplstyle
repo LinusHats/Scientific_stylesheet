@@ -54,7 +54,6 @@ axes.labelpad:      10          # space between label and axis
 
 ## Set color cycle: blue, green, yellow, red, violet, gray
 axes.prop_cycle : (cycler('color', ['000CA5', '019757', 'FFD300', 'EB0042', 'FF8201', '1EB6E7']))
-axes.locator_params.nbins : 5 
 
 ######################### TICKS #########################################
 xtick.top:           True       # draw ticks on the top side
